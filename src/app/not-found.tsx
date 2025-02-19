@@ -1,4 +1,10 @@
+import { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+    title: "Seite nicht gefunden - Luca Heidemann",
+    description: "Diese Seite konnte nicht gefunden werden.",
+};
 
 export default function NotFound() {
     return (

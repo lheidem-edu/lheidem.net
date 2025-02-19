@@ -1,4 +1,11 @@
 import { Mail, Map } from "lucide-react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Luca Heidemann",
+    description:
+        "Fachinformatiker für Systemintegration in Ausbildung bei BE Bauelemente GmbH",
+};
 
 export default function Page() {
     return (
