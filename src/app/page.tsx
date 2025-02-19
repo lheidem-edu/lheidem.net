@@ -1,4 +1,4 @@
-import { Globe, Mail, Map } from "lucide-react";
+import { Mail, Map } from "lucide-react";
 
 export default function Page() {
     return (
