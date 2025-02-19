@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function NotFound() {
     return (
         <div className="flex min-h-svh bg-gradient-to-br from-slate-950 to-slate-900 p-8 text-white">
@@ -11,12 +13,12 @@ export default function NotFound() {
                             Diese Seite konnte nicht gefunden werden.
                         </p>
                     </div>
-                    <a
+                    <Link
                         href="/"
                         className="border-b border-white/10 text-sm transition-colors hover:border-rose-600 focus:border-rose-600 focus:outline-none"
                     >
                         Zurück zur Startseite
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>
