@@ -1,4 +1,4 @@
-import { Mail, Map } from "lucide-react";
+import { Mail, Map, Key } from "lucide-react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -36,6 +36,16 @@ export default function Page() {
                                     className="border-b border-white/10 text-sm transition-colors hover:border-rose-600 focus:border-rose-600 focus:outline-none"
                                 >
                                     kontakt@lheidem.net
+                                </a>
+                            </div>
+                            <div className="flex items-center gap-x-2">
+                                <Key className="h-4 w-4 text-neutral-400" />
+                                <a
+                                    href="/lheidem.asc"
+                                    download
+                                    className="border-b border-white/10 text-sm transition-colors hover:border-rose-600 focus:border-rose-600 focus:outline-none"
+                                >
+                                    PGP-Schlüssel herunterladen
                                 </a>
                             </div>
                         </div>
