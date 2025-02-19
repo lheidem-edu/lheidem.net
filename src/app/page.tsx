@@ -22,8 +22,8 @@ export default function Page() {
                                 <Map className="h-4 w-4 text-neutral-400" />
                                 <a
                                     href="https://www.google.com/maps/place/Nordrhein-Westfalen,+Deutschland"
-                                    target="_blank"
                                     rel="noopener noreferrer"
+                                    target="_blank"
                                     className="border-b border-white/10 text-sm transition-colors hover:border-rose-600 focus:border-rose-600 focus:outline-none"
                                 >
                                     Nordrhein-Westfalen, Deutschland
@@ -48,7 +48,7 @@ export default function Page() {
 
                         <div className="flex w-full flex-col gap-y-2 rounded-lg border border-white/10 p-4">
                             <div className="flex flex-col justify-between gap-y-2 md:flex-row md:items-center md:gap-x-2">
-                                <h3 className="text-sm text-neutral-100 font-semibold">
+                                <h3 className="text-sm font-semibold text-neutral-100">
                                     Ausbildung zum Fachinformatiker &mdash;
                                     Systemintegration
                                 </h3>
@@ -60,8 +60,8 @@ export default function Page() {
                             <div>
                                 <a
                                     href="https://be-fenster-tueren.de/"
-                                    target="_blank"
                                     rel="noopener noreferrer"
+                                    target="_blank"
                                     className="border-b border-white/10 text-sm text-neutral-400 transition-colors hover:border-rose-600 focus:border-rose-600 focus:outline-none"
                                 >
                                     BE Bauelemente GmbH
