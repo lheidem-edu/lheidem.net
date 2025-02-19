@@ -62,6 +62,29 @@ export default function Page() {
                             </div>
                         </div>
                     </section>
+
+                    <section className="flex flex-col gap-y-16">
+                        <h2 className="text-2xl font-semibold tracking-tight">
+                            Kenntnisse
+                        </h2>
+                        <div className="flex flex-wrap gap-2">
+                            {[
+                                "Active Directory",
+                                "C#",
+                                "Debian GNU/Linux",
+                                "Git",
+                                "Microsoft Windows",
+                                "Proxmox Virtual Environment",
+                            ].map((skill) => (
+                                <span
+                                    key={skill}
+                                    className="rounded-full bg-white/10 px-3 py-1 text-sm text-neutral-100"
+                                >
+                                    {skill}
+                                </span>
+                            ))}
+                        </div>
+                    </section>
                 </div>
             </div>
         </div>
