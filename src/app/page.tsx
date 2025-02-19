@@ -48,7 +48,7 @@ export default function Page() {
 
                         <div className="flex w-full flex-col gap-y-2 rounded-lg border border-white/10 p-4">
                             <div className="flex flex-col justify-between gap-y-2 md:flex-row md:items-center md:gap-x-2">
-                                <h3 className="text-sm text-neutral-100">
+                                <h3 className="text-sm text-neutral-100 font-semibold">
                                     Ausbildung zum Fachinformatiker &mdash;
                                     Systemintegration
                                 </h3>
