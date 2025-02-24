@@ -92,7 +92,7 @@ export default function Page() {
                         <h2 className="text-2xl font-semibold tracking-tight">
                             Kenntnisse
                         </h2>
-                        <div className="flex flex-wrap gap-2">
+                        <ul className="flex flex-wrap gap-2">
                             {[
                                 "Active Directory",
                                 "C#",
@@ -101,14 +101,14 @@ export default function Page() {
                                 "Microsoft Windows",
                                 "Proxmox Virtual Environment",
                             ].map((skill) => (
-                                <span
+                                <li
                                     key={skill}
                                     className="rounded-full bg-white/10 px-3 py-1 text-sm text-neutral-100"
                                 >
                                     {skill}
-                                </span>
+                                </li>
                             ))}
-                        </div>
+                        </ul>
                     </section>
                 </div>
             </div>
