@@ -56,16 +56,24 @@ export default function Page() {
                             Berufserfahrung
                         </h2>
 
-                        <div className="flex w-full flex-col gap-y-2 rounded-lg border border-white/10 p-4">
+                        <div className="flex w-full flex-col gap-y-4 rounded-lg border border-white/10 bg-white/10 p-6">
                             <div className="flex flex-col justify-between gap-y-2 md:flex-row md:items-center md:gap-x-2">
-                                <h3 className="text-sm font-semibold text-neutral-100">
+                                <h3 className="flex-grow text-base font-semibold text-neutral-100">
                                     Ausbildung zum Fachinformatiker &mdash;
                                     Systemintegration
                                 </h3>
-                                <span className="text-sm text-neutral-100">
+                                <span className="self-start rounded-full bg-white/10 px-3 py-1 text-sm text-neutral-100">
                                     2023 &ndash; heute
                                 </span>
                             </div>
+
+                            <p className="text-sm text-neutral-200">
+                                Die Firma BE Bauelemente GmbH ist ein Hersteller
+                                hochwertiger Fenster und Türen aus Aluminium und
+                                Kunststoff sowie Rollläden und
+                                Insektenschutzsysteme, die durch Qualität,
+                                Innovation und Langlebigkeit überzeugen.
+                            </p>
 
                             <div>
                                 <a
