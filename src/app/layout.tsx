@@ -1,5 +1,6 @@
-import "./globals.css";
+import React from "react";
 import localFont from "next/font/local";
+import "./tailwind.css";
 
 const iosevkaFont = localFont({
     src: [
@@ -14,8 +15,8 @@ const iosevkaFont = localFont({
             style: "normal",
         },
         {
-            path: "./Iosevka-Bold.woff2",
-            weight: "700",
+            path: "./Iosevka-ExtraBold.woff2",
+            weight: "800",
             style: "normal",
         },
     ],
@@ -23,12 +24,14 @@ const iosevkaFont = localFont({
 
 export default function RootLayout({
     children,
-}: Readonly<{
+}: {
     children: React.ReactNode;
-}>) {
+}) {
     return (
         <html lang="de">
-            <body className={iosevkaFont.className}>{children}</body>
+            <body className={`${iosevkaFont.className} bg-slate-950 p-4`}>
+                <div className="mx-auto max-w-3xl">{children}</div>
+            </body>
         </html>
     );
 }
