@@ -51,7 +51,7 @@ export default function LegalNotice() {
                     </a>
                 </p>
                 <p className="text-sm text-slate-300">
-                    Telefon: +49 1522 26516362
+                    Telefon: +49 1522 6516362
                 </p>
                 <p className="text-justify text-sm text-slate-300">
                     Die E-Mail-Adresse dient als primärer Kommunikationskanal
