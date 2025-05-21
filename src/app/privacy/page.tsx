@@ -95,7 +95,7 @@ export default function PrivacyPolicy() {
                     Funktionalität der Website ist ohne diese Verarbeitung nicht
                     gewährleistet.
                 </p>
-                <p>
+                <p className="text-justify text-sm text-slate-300">
                     Ihre personenbezogenen Daten werden von Cloudflare so lange
                     gespeichert, wie es für die beschriebenen Zwecke
                     erforderlich ist.
