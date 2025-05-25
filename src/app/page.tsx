@@ -11,12 +11,12 @@ export default function Page() {
     return (
         <div className="space-y-8">
             <ul className="flex flex-col gap-x-4 gap-y-2 md:flex-row md:items-center">
-                <li>
+                <li className="select-none">
                     <Link href="/">
                         <img className="h-4 w-4" src="/icon.svg" />
                     </Link>
                 </li>
-                <li className="text-sm tracking-tight text-slate-300">
+                <li className="text-sm tracking-tight text-slate-300 select-none">
                     <Link
                         className="border-b border-slate-600 hover:border-rose-600"
                         href="/legal/"
@@ -24,7 +24,7 @@ export default function Page() {
                         Impressum
                     </Link>
                 </li>
-                <li className="text-sm tracking-tight text-slate-300">
+                <li className="text-sm tracking-tight text-slate-300 select-none">
                     <Link
                         className="border-b border-slate-600 hover:border-rose-600"
                         href="/privacy/"
@@ -87,8 +87,7 @@ export default function Page() {
                     Die Produkte der BE Bauelemente GmbH stehen für Qualität,
                     Innovation und Langlebigkeit.
                 </p>
-                <p className="inline-flex items-center gap-x-2 text-sm text-slate-300">
-                    <ExternalLinkIcon className="inline h-4 w-4" />
+                <p className="text-sm text-slate-300">
                     <a
                         className="border-b border-slate-600 hover:border-rose-600"
                         href="https://be-fenster-tueren.de/"

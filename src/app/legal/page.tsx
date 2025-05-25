@@ -50,9 +50,9 @@ export default function LegalNotice() {
                     E-Mail:{" "}
                     <a
                         className="border-b border-slate-600 hover:border-rose-600"
-                        href="mailto:kontakt@lheidem.net"
+                        href="mailto:webmaster@lheidem.net"
                     >
-                        kontakt [at] lheidem [dot] net
+                        webmaster [at] lheidem [dot] net
                     </a>
                 </p>
                 <p className="text-sm text-slate-300">
