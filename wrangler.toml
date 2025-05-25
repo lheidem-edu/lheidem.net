@@ -1,0 +1,5 @@
+name = "lheidem.net"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+NODE_VERSION = "22.15.1"
