@@ -1,6 +1,11 @@
-import React from "react";
+import { Metadata } from "next";
 import localFont from "next/font/local";
+import React from "react";
 import "./tailwind.css";
+
+export const metadata: Metadata = {
+    authors: [{ name: "Luca Heidemann", url: "https://lheidem.net/" }],
+};
 
 const iosevkaFont = localFont({
     src: [

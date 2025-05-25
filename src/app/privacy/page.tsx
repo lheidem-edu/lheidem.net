@@ -1,5 +1,10 @@
 import { ArrowLeftIcon } from "lucide-react";
+import { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+    title: "Datenschutzerklärung - Luca Heidemann",
+};
 
 export default function PrivacyPolicy() {
     return (

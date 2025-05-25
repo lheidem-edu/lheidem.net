@@ -1,19 +1,22 @@
-import {
-    ExternalLinkIcon,
-    KeyIcon,
-    MailIcon,
-    MapIcon,
-    SectionIcon,
-    UserLockIcon,
-} from "lucide-react";
+import { ExternalLinkIcon, KeyIcon, MailIcon, MapIcon } from "lucide-react";
+import { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+    title: "Luca Heidemann",
+    description: "In Ausbildung bei der BE Bauelemente GmbH.",
+};
 
 export default function Page() {
     return (
         <div className="space-y-8">
-            <ul className="flex flex-col items-start gap-x-4 gap-y-2 md:flex-row">
-                <li className="inline-flex items-center gap-x-2 text-sm tracking-tight text-slate-300">
-                    <SectionIcon className="h-4 w-4" />
+            <ul className="flex flex-col gap-x-4 gap-y-2 md:flex-row md:items-center">
+                <li>
+                    <Link href="/">
+                        <img className="h-4 w-4" src="/icon.svg" />
+                    </Link>
+                </li>
+                <li className="text-sm tracking-tight text-slate-300">
                     <Link
                         className="border-b border-slate-600 hover:border-rose-600"
                         href="/legal/"
@@ -21,8 +24,7 @@ export default function Page() {
                         Impressum
                     </Link>
                 </li>
-                <li className="inline-flex items-center gap-x-2 text-sm tracking-tight text-slate-300">
-                    <UserLockIcon className="h-4 w-4" />
+                <li className="text-sm tracking-tight text-slate-300">
                     <Link
                         className="border-b border-slate-600 hover:border-rose-600"
                         href="/privacy/"
