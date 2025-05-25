@@ -10,14 +10,14 @@ export default function Page() {
     return (
         <div className="space-y-8">
             <section className="space-y-4">
-                <h1 className="text-3xl font-extrabold tracking-tight text-slate-200">
+                <h1 className="text-3xl font-extrabold tracking-tight text-neutral-200">
                     Luca Heidemann
                 </h1>
                 <ul className="flex flex-col items-start gap-x-4 gap-y-2 md:flex-row">
-                    <li className="inline-flex items-center gap-x-2 text-sm text-slate-300">
+                    <li className="inline-flex items-center gap-x-2 text-sm text-neutral-400">
                         <MapIcon className="h-4 w-4" />
                         <a
-                            className="border-b border-slate-600 hover:border-rose-600"
+                            className="border-b border-neutral-600 hover:border-rose-600 focus:border-rose-600 focus:outline-none"
                             href="https://www.google.com/maps/place/Nordrhein-Westfalen,+Deutschland"
                             rel="noopener noreferrer"
                             target="_blank"
@@ -25,10 +25,10 @@ export default function Page() {
                             Nordrhein-Westfalen, Deutschland
                         </a>
                     </li>
-                    <li className="inline-flex items-center gap-x-2 text-sm text-slate-300">
+                    <li className="inline-flex items-center gap-x-2 text-sm text-neutral-400">
                         <MailIcon className="h-4 w-4" />
                         <a
-                            className="border-b border-slate-600 hover:border-rose-600"
+                            className="border-b border-neutral-600 hover:border-rose-600 focus:border-rose-600 focus:outline-none"
                             href="mailto:kontakt@lheidem.net"
                             rel="noopener noreferrer"
                             target="_blank"
@@ -36,10 +36,10 @@ export default function Page() {
                             kontakt [at] lheidem [dot] net
                         </a>
                     </li>
-                    <li className="inline-flex items-center gap-x-2 text-sm text-slate-300">
+                    <li className="inline-flex items-center gap-x-2 text-sm text-neutral-400">
                         <KeyIcon className="h-4 w-4" />
                         <a
-                            className="border-b border-slate-600 hover:border-rose-600"
+                            className="border-b border-neutral-600 hover:border-rose-600 focus:border-rose-600 focus:outline-none"
                             href="/lheidem.asc"
                             download
                         >
@@ -50,10 +50,10 @@ export default function Page() {
             </section>
 
             <section className="space-y-4">
-                <h2 className="text-2xl font-semibold tracking-tight text-slate-200">
+                <h2 className="text-2xl font-semibold tracking-tight text-neutral-200">
                     Berufserfahrung
                 </h2>
-                <p className="text-justify text-sm text-slate-300">
+                <p className="text-justify text-sm text-neutral-400">
                     Seit August 2023 absolviere ich meine Ausbildung zum
                     Fachinformatiker für Systemintegration bei der BE
                     Bauelemente GmbH. Das Unternehmen ist ein führender
@@ -62,9 +62,9 @@ export default function Page() {
                     Die Produkte der BE Bauelemente GmbH stehen für Qualität,
                     Innovation und Langlebigkeit.
                 </p>
-                <p className="text-sm text-slate-300">
+                <p className="text-sm text-neutral-400">
                     <a
-                        className="border-b border-slate-600 hover:border-rose-600"
+                        className="border-b border-neutral-600 hover:border-rose-600 focus:border-rose-600 focus:outline-none"
                         href="https://be-fenster-tueren.de/"
                         rel="noopener noreferrer"
                         target="_blank"
@@ -75,7 +75,7 @@ export default function Page() {
             </section>
 
             <section className="space-y-4">
-                <h2 className="text-2xl font-semibold tracking-tight text-slate-200">
+                <h2 className="text-2xl font-semibold tracking-tight text-neutral-200">
                     Kenntnisse
                 </h2>
                 <ul className="flex flex-wrap gap-2">
@@ -89,7 +89,7 @@ export default function Page() {
                     ].map((skill) => (
                         <li
                             key={skill}
-                            className="rounded-lg bg-slate-900 px-3 py-1 text-sm text-slate-300"
+                            className="rounded-lg bg-neutral-900 px-3 py-1 text-sm text-neutral-400"
                         >
                             {skill}
                         </li>

@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import localFont from "next/font/local";
+import Link from "next/link";
 import React from "react";
-import Navigation from "../lib/components/navigation";
 import "./tailwind.css";
 
 export const metadata: Metadata = {
@@ -35,11 +35,49 @@ export default function RootLayout({
 }) {
     return (
         <html lang="de">
-            <body className={`${iosevkaFont.className} bg-slate-950 p-4`}>
-                <div className="mx-auto max-w-3xl space-y-8">
-                    <Navigation />
+            <body
+                className={`${iosevkaFont.className} flex min-h-svh flex-col bg-neutral-950`}
+            >
+                <header className="sticky top-0 border-b border-neutral-600/10 backdrop-blur-lg">
+                    <nav className="mx-auto max-w-3xl p-4">
+                        <ul className="flex flex-row items-center gap-x-4 text-sm tracking-tight text-neutral-400 select-none">
+                            <li>
+                                <Link
+                                    className="flex flex-row items-center gap-x-2 focus:outline-none focus:text-neutral-200 hover:text-neutral-200 transition-colors"
+                                    href="/"
+                                >
+                                    <img className="h-4 w-4" src="/icon.svg" />
+                                    lheidem.net
+                                </Link>
+                            </li>
+                        </ul>
+                    </nav>
+                </header>
+                <main className="mx-auto w-full max-w-3xl grow space-y-8 p-4">
                     {children}
-                </div>
+                </main>
+                <footer className="border-t border-neutral-600/10">
+                    <nav className="mx-auto max-w-3xl p-4">
+                        <ul className="flex flex-row gap-x-4 text-sm tracking-tight text-neutral-600 select-none">
+                            <li>
+                                <Link
+                                    className="transition-colors hover:text-neutral-400 focus:text-neutral-400 focus:outline-none"
+                                    href="/legal/"
+                                >
+                                    Impressum
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    className="transition-colors hover:text-neutral-400 focus:text-neutral-400 focus:outline-none"
+                                    href="/privacy/"
+                                >
+                                    Datenschutzerklärung
+                                </Link>
+                            </li>
+                        </ul>
+                    </nav>
+                </footer>
             </body>
         </html>
     );
