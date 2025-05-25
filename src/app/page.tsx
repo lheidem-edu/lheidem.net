@@ -1,6 +1,5 @@
-import { ExternalLinkIcon, KeyIcon, MailIcon, MapIcon } from "lucide-react";
+import { KeyIcon, MailIcon, MapIcon } from "lucide-react";
 import { Metadata } from "next";
-import Link from "next/link";
 
 export const metadata: Metadata = {
     title: "Luca Heidemann",
@@ -10,30 +9,6 @@ export const metadata: Metadata = {
 export default function Page() {
     return (
         <div className="space-y-8">
-            <ul className="flex flex-col gap-x-4 gap-y-2 md:flex-row md:items-center">
-                <li className="select-none">
-                    <Link href="/">
-                        <img className="h-4 w-4" src="/icon.svg" />
-                    </Link>
-                </li>
-                <li className="text-sm tracking-tight text-slate-300 select-none">
-                    <Link
-                        className="border-b border-slate-600 hover:border-rose-600"
-                        href="/legal/"
-                    >
-                        Impressum
-                    </Link>
-                </li>
-                <li className="text-sm tracking-tight text-slate-300 select-none">
-                    <Link
-                        className="border-b border-slate-600 hover:border-rose-600"
-                        href="/privacy/"
-                    >
-                        Datenschutzerklärung
-                    </Link>
-                </li>
-            </ul>
-
             <section className="space-y-4">
                 <h1 className="text-3xl font-extrabold tracking-tight text-slate-200">
                     Luca Heidemann

@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import localFont from "next/font/local";
 import React from "react";
+import Navigation from "../lib/components/navigation";
 import "./tailwind.css";
 
 export const metadata: Metadata = {
@@ -35,7 +36,10 @@ export default function RootLayout({
     return (
         <html lang="de">
             <body className={`${iosevkaFont.className} bg-slate-950 p-4`}>
-                <div className="mx-auto max-w-3xl">{children}</div>
+                <div className="mx-auto max-w-3xl space-y-8">
+                    <Navigation />
+                    {children}
+                </div>
             </body>
         </html>
     );
